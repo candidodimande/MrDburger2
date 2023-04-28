@@ -4,7 +4,8 @@ const routes = [
     path: '/',
     component: () => import('layouts/MrDLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: () => import('pages/IndexPage.vue') },
+      { path: 'menu', component: () => import('pages/IndexMenu.vue') },
     ]
   },
 

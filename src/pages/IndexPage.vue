@@ -1,6 +1,6 @@
 <template>
-  <q-page class="" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-    <div class="fullwidthbg main-bgcolor q-pa-md q-pt-xl q-pb-xl space-between text-black text-weight-normal">
+  <q-page class="bg-grey-10" style="height: 100vh; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <div class="fullwidth main-bgcolor q-pa-md q-pt-xl q-pb-xl space-between text-black text-weight-normal"  style="padding-bottom: 100px; position: relative; border-radius: 0 0 50% 50%;">
       <q-list style="position: absolute; top: 0%; left: 45%;">
         <q-item clickable v-ripple >
         <q-item-section class="text-white" style="font-weight: lighter; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-style: italic;">Olá Meekness</q-item-section>
@@ -11,11 +11,14 @@
         </q-item-section>
       </q-item>
       </q-list>
-      <div 
-        style="position: relative;"
-        class="q-mt-md"
+      
+    </div>
+
+    <div 
+        style="position: absolute; top: 80px; left: 50%; transform: translate(-50%); border-radius: 5px; z-index: 1; width: 60%;"
+        class="q-pa-lg bg-red shadow-20"
       >
-        <div>
+        <div class="q-pa-sm">
           <q-img
             class="absolute-center"
             style="width: 100px; position: relative;"
@@ -29,12 +32,11 @@
         A taste of home
       </div>
       </div> 
-    </div>
 
     <div 
     class="fullwidth bg-grey-10 q-pa-md q-ml-xm" 
-    style="border-radius: 20px 20px 0 0; margin-top: -20px; min-height: 100vh;">
-      <div>
+    style=" position: relative;">
+      <div style="margin-top: 40px;">
         <swiper
           slidesperview="auto"
           :space-between="0"
@@ -60,8 +62,8 @@
                 <div class="text-subtitle2 text-weight-light" style="letter-spacing: 3px;">{{card.size}}</div>
               </q-card-section>
 
-              <q-card-actions>
-                <q-btn outline rounded>Encomendar</q-btn>
+              <q-card-actions class="text-right" style="margin-top: -20px">
+                <q-btn outline rounded class="text-center" style="text-align: center;">Encomendar</q-btn>
                 <!-- <q-btn flat>Action 2</q-btn> -->
               </q-card-actions>
             </q-card>
@@ -72,8 +74,8 @@
 
       <div class=" q-px-sm row justify-between">
         <div class="column">
-          <q-btn round style="background: none; border: 1px solid orangered" icon="local_grocery_store"/>
-          <p>Cardápio</p>
+          <q-btn to="menu" round style="background: none; border: 1px solid orangered" icon="local_grocery_store"/>
+          <p>Menu</p>
         </div>
 
         <div class="column">

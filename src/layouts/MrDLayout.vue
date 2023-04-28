@@ -22,6 +22,20 @@
       </q-list>
     </q-drawer>
 
+    <q-footer style="background: ;" class="q-pb-md bg-grey-10">
+      <q-tabs
+        v-model="tab"
+        indicator-color="purple"
+        class="text-white tabs"
+      >
+        <q-tab to="/" name="mails" icon="home" />
+        <q-tab name="alarms" icon="chat" />
+        <q-tab name="alarms" icon="more" />
+        <q-tab name="movies" icon="person" />
+
+      </q-tabs>
+    </q-footer>
+
     <q-page-container>
       <router-view />
     </q-page-container>

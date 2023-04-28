@@ -34,7 +34,7 @@ export const useCardStore = defineStore('card', {
         color: 'orange-2',
         bgColor: "bg-grey-10"
       },
-    }
+    },
   }),
   getters: {
     doubleCount: (state) => state.counter * 2,
